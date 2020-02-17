@@ -1,0 +1,2 @@
+rect_width:70
+rect_height:30

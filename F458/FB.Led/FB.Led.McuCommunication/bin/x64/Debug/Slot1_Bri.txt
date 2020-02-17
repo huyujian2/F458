@@ -1,0 +1,3 @@
+Slot1_White_LED3_bri =58.3026 lux
+Slot1_White_LED6_bri =47.9472 lux
+Slot1_White_LED9_bri =58.1608 lux

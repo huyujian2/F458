@@ -1,0 +1,468 @@
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-19\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-20\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-21\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-22\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-23\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458测试版本-命令协议\FB.Led.McuCommunication2019-2-24\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-6\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\工作任务\F458-\F458新版\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\my\Desktop\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+E:\desk\移动\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+E:\desk\移动\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+E:\desk\移动\FB.Led.McuCommunication2019-3-9\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\最新的\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\最新的\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\最新的\FB.Led_2_whiteChange _covertest _20190426\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\20190427\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\201904271531\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\201904271532\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201904271532\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201904271532\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\201904281100\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lastone\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lastone\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lastone\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\201942910\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\FB.Led\2019_4_29_23_08\FB.Ledv1_zhongji_lasttwo\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\FB.Led\2019_4_30_10_28\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\项目总结\F458_CODE\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\Administrator\Desktop\项目总结\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\CLIDelegate.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ThridLibray.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\10987\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.DebuggerVisualizers.VS2017.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\zh-Hans\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\日天\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\zh-Hans\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\zh-Hans\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+C:\Users\huyujian\Desktop\F458\F458_CODE _ONE_LED_LED - 副本 - 副本\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe.config
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.exe
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\FB.Led.McuCommunication.pdb
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Microsoft.VisualStudio.DebuggerVisualizers.dll
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\ZedGraph.dll
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.UI.xml
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\Emgu.CV.World.xml
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\bin\x64\Debug\zh-Hans\Microsoft.VisualStudio.DebuggerVisualizers.resources.dll
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csprojAssemblyReference.cache
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CoreCompileInputs.cache
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.csproj.CopyComplete
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.exe
+D:\Mudu\F458_C#重构版\FB.Ledv1_zuiDazuiXiao\FB.Led.McuCommunication\obj\x64\Debug\FB.Led.McuCommunication.pdb

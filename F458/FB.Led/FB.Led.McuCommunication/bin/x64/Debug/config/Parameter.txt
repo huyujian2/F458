@@ -1,0 +1,12 @@
+rect_width:1100
+rect_height:65
+Wtime:60000
+Rtime:3000
+Gtime:3000
+Offsetled:1
+picturetime:500
+colorrect_width:25
+colorrect_height:10
+button_limit:1.5
+cover_limit:15
+sensoroffset: 0

@@ -1,0 +1,2 @@
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\bin\x64\Release\FB.Led.McuCommunication.exe.config
+C:\Users\Administrator\Desktop\FB.Led.McuCommunication_changeLT\FB.Led.McuCommunication\obj\x64\Release\FB.Led.McuCommunication.csprojResolveAssemblyReference.cache

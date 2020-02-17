@@ -1,0 +1,1985 @@
+using Emgu.CV;
+using Emgu.CV.CvEnum;
+using Emgu.CV.Structure;
+using Emgu.CV.Util;
+using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.IO;
+using System.IO.Ports;
+using System.Linq;
+using System.Text;
+using System.Text.RegularExpressions;
+using System.Threading;
+using System.Threading.Tasks;
+using ThridLibray;
+
+namespace FB.Led.McuCommunication
+{
+    class Program
+    {
+        static Dictionary<string, string[]> dic = new Dictionary<string, string[]>();
+        static List<string> listKeys = new List<string>();
+        static SerialPort serial = new SerialPort("COM10", 115200, Parity.None, 8, StopBits.One) { NewLine = "\r\n" };
+        static bool ThreadStop = false;
+        public static string Allvalue = "";
+        public static string command = "";
+        public static string panduan = "";
+        public static string dev_number = "";
+        public static List<double> Cover1 = new List<double>();
+        public static List<double> Cover2 = new List<double>();
+        public static List<double> Button1 = new List<double>();
+        public static List<double> Button2 = new List<double>();
+        static void Main(string[] args)
+        {
+            if (args.Length != 1)
+            {
+                Console.WriteLine("The format of parameters is incorrect.");
+                return;
+            }
+            try
+            {
+                switch (args[0])
+                {
+                    case "HELP":
+                    case "VERSION":
+                    case "RESET":
+                    case "CHECK_READY":
+                    case "USB_IN1":
+                    case "USB_IN2":
+                    case "USB_OUT1":
+                    case "USB_OUT2":
+                    case "ELEC_COVER_IN1":
+                    case "ELEC_COVER_IN2":
+                    case "ELEC_COVER_OUT1":
+                    case "ELEC_COVER_OUT2":
+                    case "DRAWER_LOCK":
+                    case "DRAWER_UNLOCK":
+                    case "CHECK_STATUS":
+                    case "TEST_DONE":
+                        McuCommunication(args[0]);
+                        break;
+                
+                    case "READY":
+                        ReadyTest();
+                        break;
+                  
+                    case "USB_IN":
+                        USB_IN();
+                        break;
+             
+                    case "USB_OUT":
+                        USB_OUT();
+                        break;
+                
+                  
+                       
+                    case "COVER_TEST":
+                        CoverTest();
+                        break;
+                    case "COVER_TEST1":
+                        CoverTest1();
+                        break;
+                    case "COVER_TEST2":
+                        CoverTest2();
+                        break;
+                    case "BUTTON_TEST":
+                        ButtonPush();
+                        break;
+                    case "BUTTON_TEST1":
+                        ButtonPush();
+                        break;
+                    case "BUTTON_TEST2":
+                        ButtonPush();
+                        break;
+                    case "WHITE_LED_TEST":
+                        WhiteLedTest("0");
+                        break;
+                    case "WHITE_LED_TEST1":
+                        WhiteLedTest("1");
+                        break;
+                    case "WHITE_LED_TEST2":
+                        WhiteLedTest("2");
+                        break;
+                    case "WHITE_LED_TEST3":
+                        WhiteLedTest("3");
+                        break;
+                    case "GREEN_LED_TEST":
+                        GreenLedTest();
+                        break;
+                    case "RED_LED_TEST":
+                        RedLedTest();
+                        break;
+
+                    default:
+                        Console.WriteLine("Command error\nPlease input the correct command");
+                        break;
+                }
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine("Error occured in serial port communication.");
+                Console.WriteLine(ex.Message);
+            }
+        }
+
+
+        static void McuCommunication(string command)
+        {
+            serial.Open();
+            serial.WriteLine(command);
+            Thread.Sleep(300);
+            string readstr = serial.ReadExisting();
+            if (readstr.Length > 0)
+            {
+                Console.WriteLine(readstr);
+                Console.WriteLine(command + "_OK");
+            }
+            if (command.Contains("VERSION"))
+            {
+                Console.Write(SoftwareInformation());
+            }
+            else
+            {
+                Console.WriteLine(command + "_ERROR");
+            }
+            serial.Close();
+        }
+        static void ReadyTest()
+        {
+            serial.Open();
+            panduan = "";
+            while (true)
+            {
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("START TEST"))
+                {
+                    Console.WriteLine("START TEST");
+                    return;
+                }
+            }
+
+        }
+
+        static void USB_IN()
+        {
+            panduan = "";
+            serial.Open();
+            serial.WriteLine("USB_IN1");
+            Thread.Sleep(300);
+            serial.WriteLine("USB_IN2");
+            int time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("USB_IN1_OK"))
+                {
+                    if (panduan.Contains("USB_IN2_OK"))
+                    {
+                        Console.WriteLine("USB_IN_OK");
+                        break;
+                    }
+                }
+                if (panduan.Contains("USB_IN1_OK"))
+                {
+                    if (panduan.Contains("USB_IN2_ERROR"))
+                    {
+                        Console.WriteLine("USB_IN2_ERROR");
+                        Console.WriteLine("USB_IN_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("USB_IN1_ERROR"))
+                {
+                    if (panduan.Contains("USB_IN2_OK"))
+                    {
+                        Console.WriteLine("USB_IN1_ERROR");
+                        Console.WriteLine("USB_IN_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("USB_IN1_ERROR"))
+                {
+                    if (panduan.Contains("USB_IN2_ERROR"))
+                    {
+                        Console.WriteLine("USB_IN_ERROR");
+                        break;
+                    }
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("USB_IN_ERROR");
+                    return;
+                }
+            }
+        }
+
+        static void USB_OUT()
+        {
+            panduan = "";
+            serial.Open();
+            serial.WriteLine("USB_OUT1");
+            Thread.Sleep(10);
+            serial.WriteLine("USB_OUT2");
+            int time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                time++;
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("USB_OUT1_OK"))
+                {
+                    if (panduan.Contains("USB_OUT2_OK"))
+                    {
+                        Console.WriteLine("USB_OUT_OK");
+                        break;
+                    }
+                }
+                if (panduan.Contains("USB_OUT1_OK"))
+                {
+                    if (panduan.Contains("USB_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("USB_OUT2_ERROR");
+                        Console.WriteLine("USB_OUT_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("USB_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("USB_OUT2_OK"))
+                    {
+                        Console.WriteLine("USB_OUT1_ERROR");
+                        Console.WriteLine("USB_OUT_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("USB_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("USB_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("USB_OUT_ERROR");
+                        return;
+                    }
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("USB_OUT_ERROR");
+                    return;
+                }
+            }
+        }
+        static void CoverTest()
+        {
+            serial.Open();
+            serial.WriteLine("MOTOR_COVER_OUT1");
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_COVER_OUT2");
+            panduan = "";
+            int time = 0;
+            while (true)
+            {
+                Thread.Sleep(300);
+                time++;
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_OK"))
+                    {
+                        break;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+
+                    }
+
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            serial.WriteLine("ELEC_COVER_OUT1");
+            Thread.Sleep(50);
+            serial.WriteLine("ELEC_COVER_OUT2");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_OK"))
+                    {
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                }
+            }
+            panduan = "";
+            serial.WriteLine("ELEC_COVER_IN1");
+            Thread.Sleep(50);
+            serial.WriteLine("ELEC_COVER_IN2");
+            time = 0;
+            while (true)
+            {
+                time++;
+                panduan = panduan + serial.ReadExisting();
+                Thread.Sleep(300);
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                    {
+                        break;
+                    }
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                    {
+                        Console.WriteLine("ELEC_COVER_IN_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_ERROR"))
+                    {
+                        Console.WriteLine("ELEC_COVER_IN_ERROR");
+                        return;
+                    }
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_ERROR"))
+                    {
+                        Console.WriteLine("ELEC_COVER_IN_ERROR");
+                        return;
+                    }
+                }
+                if (time == 10)
+                {
+                    
+                    Console.WriteLine("ELEC_COVER_IN_ERROR");
+                    return;
+                }
+            }
+            Thread CoverTestworkThread = new Thread(new ThreadStart(SensorCoverTestThreadFunction));
+            CoverTestworkThread.Start();
+            serial.WriteLine("MOTOR_COVER_IN1");
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_COVER_IN2");
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                time++;
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_IN1_OK"))
+                    {
+                        ThreadStop = true;
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("MOTOR_COVER_IN1_ERROR"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_IN2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        ThreadStop = true;
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("MOTOR_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_IN2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        ThreadStop = true;
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("STOP"))
+                {
+                    Console.WriteLine("MOTOR_COVER_IN_STOP");
+                    Thread.Sleep(3000);
+                    break;
+
+                }
+                if (time == 100)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    ThreadStop = true;
+                    break;
+                }
+            }
+
+
+            Thread.Sleep(200);
+            serial.WriteLine("MOTOR_COVER_OUT1");
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_COVER_OUT2");
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(300);
+                time++;
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_OK"))
+                    {
+                        ThreadStop = true;
+                        break;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        ThreadStop = true;
+                        return;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        ThreadStop = true;
+                        return;
+                    }
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("MOTOR_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        ThreadStop = true;
+                        return;
+
+                    }
+
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            Thread.Sleep(100);
+            serial.WriteLine("ELEC_COVER_OUT1");
+            Thread.Sleep(50);
+            serial.WriteLine("ELEC_COVER_OUT2");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_OK"))
+                    {
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_OUT2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                }
+            }
+            Thread.Sleep(80);
+            serial.WriteLine("ELEC_COVER_IN1");
+            Thread.Sleep(50);
+            serial.WriteLine("ELEC_COVER_IN2");
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                    {
+                        break;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    if (panduan.Contains("ELEC_COVER_IN2_ERROR"))
+                    {
+                        Console.WriteLine("COVER_TEST_ERROR");
+                        return;
+                    }
+
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    return;
+                }
+            }
+            Console.WriteLine("COVER_TEST_OK");
+            serial.Close();
+            GetDataFunction("3");
+            GetDataFunction("4");
+        }
+
+        static void CoverTest1()
+        {
+            panduan = "";
+            serial.Open();
+            serial.WriteLine("ELEC_COVER_IN1");
+            int time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    break;
+                }
+                if (serial.ReadExisting().Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    return;
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    return;
+                }
+            }
+            command = "MOTOR_COVER_STOP1";
+            Thread workThread = new Thread(new ThreadStart(SensorCoverTestThreadFunction));
+            workThread.Start();
+            serial.WriteLine("MOTOR_COVER_IN1");
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_IN1_OK"))
+                {
+                    Console.WriteLine("MOTOR_COVER_IN1_OK");
+                    ThreadStop = true;
+                    break;
+                }
+                if (panduan.Contains("MOTOR_COVER_IN1_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+                if (panduan.Contains("STOP"))
+                {
+                    Console.WriteLine("MOTOR_COVER_IN1_STOP");
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    Thread.Sleep(3000);
+                    break;
+
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            Thread.Sleep(50);
+            panduan = "";
+            serial.WriteLine("MOTOR_COVER_OUT1");
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_OUT1_OK"))
+                {
+                    ThreadStop = true;
+                    break;
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT1_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST1_ERR0R");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            Thread.Sleep(500);
+            serial.WriteLine("ELEC_COVER_OUT1");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_OUT1_OK"))
+                {
+                    break;
+                }
+                if (panduan.Contains("ELEC_COVER_OUT1_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    return;
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    return;
+                }
+            }
+            Thread.Sleep(600);
+            serial.WriteLine("ELEC_COVER_IN1");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_IN1_OK"))
+                {
+                    break;
+                }
+                if (panduan.Contains("ELEC_COVER_IN1_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    return;
+                }
+                if (time == 30)
+                {
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    return;
+                }
+            }
+            Console.WriteLine("COVER_TEST1_OK");
+            serial.Close();
+            GetDataFunction("3");
+        }
+        static void CoverTest2()
+        {
+            panduan = "";
+            serial.Open();
+            serial.WriteLine("ELEC_COVER_IN2");
+            int time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                {
+                    break;
+                }
+                if (serial.ReadExisting().Contains("ELEC_COVER_IN2_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    return;
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST_ERROR");
+                    return;
+                }
+            }
+            command = "MOTOR_COVER_STOP2";
+            Thread workThread = new Thread(new ThreadStart(SensorCoverTestThreadFunction));
+            workThread.Start();
+            serial.WriteLine("MOTOR_COVER_IN2");
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_IN2_OK"))
+                {
+                    ThreadStop = true;
+                    break;
+                }
+                if (panduan.Contains("MOTOR_COVER_IN2_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+                if (panduan.Contains("STOP"))
+                {
+                    Console.WriteLine("MOTOR_COVER_IN2_STOP");
+                    Console.WriteLine("COVER_TEST1_ERROR");
+                    Thread.Sleep(3000);
+                    break;
+
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            Thread.Sleep(50);
+            panduan = "";
+            serial.WriteLine("MOTOR_COVER_OUT2");
+            time = 0;
+            while (true)
+            {
+                time++;
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("MOTOR_COVER_OUT2_OK"))
+                {
+                    ThreadStop = true;
+                    break;
+                }
+                if (panduan.Contains("MOTOR_COVER_OUT2_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    ThreadStop = true;
+                    return;
+                }
+                if (time == 160)
+                {
+                    Console.WriteLine("COVER_TEST2_ERR0R");
+                    ThreadStop = true;
+                    return;
+                }
+            }
+            Thread.Sleep(500);
+            serial.WriteLine("ELEC_COVER_OUT2");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_OUT2_OK"))
+                {
+                    break;
+                }
+                if (panduan.Contains("ELEC_COVER_OUT2_ERROR"))
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    return;
+                }
+                if (time == 60)
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    return;
+                }
+            }
+            Thread.Sleep(600);
+            serial.WriteLine("ELEC_COVER_IN2");
+            panduan = "";
+            time = 0;
+            while (true)
+            {
+                Thread.Sleep(50);
+                panduan = panduan + serial.ReadExisting();
+                if (panduan.Contains("ELEC_COVER_IN2_OK"))
+                {
+                    break;
+                }
+                if (panduan.Contains("ELEC_COVER_IN2_ERROR"))
+                {
+
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    return;
+                }
+                if (time == 30)
+                {
+                    Console.WriteLine("COVER_TEST2_ERROR");
+                    return;
+                }
+            }
+            Console.WriteLine("COVER_TEST2_OK");
+            serial.Close();
+            GetDataFunction("4");
+        }
+
+        static void ButtonPush()
+        {
+            ReadFileData();
+            serial.Open();
+            serial.WriteLine("MOTOR_BUTTON_IN1");
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_BUTTON_IN2");            
+            Thread.Sleep(GetData("delaytime"));
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_BUTTON_OUT1");
+            Thread.Sleep(50);
+            serial.WriteLine("MOTOR_BUTTON_OUT2");            
+            Console.WriteLine("BUTTON_TEST_OK");
+            serial.Close();
+        }
+
+        static void ButtonPush1()
+        {
+            ReadFileData();
+            serial.Open();
+            serial.WriteLine("MOTOR_BUTTON_IN1");
+            Thread.Sleep(GetData("delaytime1"));
+            serial.WriteLine("MOTOR_BUTTON_OUT1");
+            Console.WriteLine("BUTTON1_TEST_OK");
+            serial.Close();
+        }
+        static void ButtonPush2()
+        {
+            ReadFileData();
+            serial.Open();
+            serial.WriteLine("MOTOR_BUTTON_IN2");
+            Thread.Sleep(GetData("delaytime2"));
+            serial.WriteLine("MOTOR_BUTTON_OUT2");
+            Console.WriteLine("BUTTON2_TEST_OK");
+            serial.Close();
+        }        
+
+        public static void SensorCoverTestThreadFunction()
+        {
+            ReadFileData();
+            int time = 0;
+            int p1 = 0;
+            int p2 = 0;
+            SerialPort Forceserial = new SerialPort("COM10", 19200, Parity.None, 8, StopBits.Two) { NewLine = "\r\n" };
+            Forceserial.Open();
+            byte[] byteAll = new byte[] { 0x01, 0x03, 0x9C, 0x48, 0x00, 0x08, 0xEA, 0x4A };
+            byte[] bufferAll = new byte[21];
+            bool StopOne = false;
+            bool StopTow = false;
+            while (true)
+            {
+                Forceserial.Write(byteAll, 0, 8);
+                Thread.Sleep(45);
+                Forceserial.Read(bufferAll, 0, 21);                
+                if (Convert.ToInt32(bufferAll[0]) != 1 || Convert.ToInt32(bufferAll[1]) != 3 || Convert.ToInt32(bufferAll[2]) != 16)
+                {
+                    for (int index = 0; index <= 20; index++)
+                    {
+                        if (index <= 18)
+                        {
+                            if (Convert.ToInt32(bufferAll[index]) == 1 && Convert.ToInt32(bufferAll[index + 1]) == 3 && Convert.ToInt32(bufferAll[index + 2]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 19)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[19]) == 1 && Convert.ToInt32(bufferAll[20]) == 3 && Convert.ToInt32(bufferAll[0]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 20)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[20]) == 1 && Convert.ToInt32(bufferAll[0]) == 3 && Convert.ToInt32(bufferAll[1]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (time > 3)
+                {
+                    //StringBuilder strvalue1 = new StringBuilder();
+                    //StringBuilder strvalue2 = new StringBuilder();
+                    StringBuilder strvalue3 = new StringBuilder();
+                    StringBuilder strvalue4 = new StringBuilder();
+                    for (int t = 11; t <= 14; t++)
+                    {
+
+                        int intNum = Convert.ToInt32(bufferAll[t]);
+                        if (intNum < 10)
+                        {
+                            strvalue3.Append("0" + intNum.ToString("x"));
+                        }
+                        else
+                        {
+                            strvalue4.Append(intNum.ToString("x"));
+                        }
+                    }
+                    for (int t = 15; t <= 18; t++)
+                    {
+
+                        int intNum = Convert.ToInt32(bufferAll[t]);
+                        if (intNum < 10)
+                        {
+                            strvalue4.Append("0" + intNum.ToString("x"));
+                        }
+                        else
+                        {
+                            strvalue4.Append(intNum.ToString("x"));
+                        }
+                    }
+                    string g1 = "" + strvalue3;
+                    string g2 = "" + strvalue4;
+                    if (g1 != "")
+                    {
+                        p1 = int.Parse(g1, System.Globalization.NumberStyles.HexNumber);
+
+                    }
+                    if (g2 != "")
+                    {
+                        p2 = int.Parse(g2, System.Globalization.NumberStyles.HexNumber);
+
+                    }
+                }
+                double value1 = p1 / 100.0;
+                double value2 = p2 / 100.0;
+                if (value1 < 100)
+                {
+                    Cover1.Add(value1);
+                }
+                if (value2 < 100)
+                {
+                    Cover2.Add(value2+GetData("sensoroffset"));
+                }                
+                if (GetData("cover_limit") <= value1 && value1 <= 20)
+                {
+                    ThreadStop = true;
+                    serial.WriteLine("MOTOR_COVER_STOP1");
+                    Thread.Sleep(20);
+                    serial.WriteLine("MOTOR_COVER_OUT1");
+                    StopOne = true;
+                    break;
+                }
+                if (GetData("cover_limit") <= value2 && value2 <= 20)
+                {
+                    ThreadStop = true;
+                    serial.WriteLine("MOTOR_COVER_STOP2");
+                    Thread.Sleep(20);
+                    serial.WriteLine("MOTOR_COVER_OUT2");
+                    StopTow = true;
+                    break;
+                }
+                if (ThreadStop == true)
+                {
+                    ThreadStop = false;
+                    break;
+                }
+            }
+            while (true)
+            {
+                Forceserial.Write(byteAll, 0, 8);
+                Thread.Sleep(45);
+                Forceserial.Read(bufferAll, 0, 21);
+                if (Convert.ToInt32(bufferAll[0]) != 1 || Convert.ToInt32(bufferAll[1]) != 3 || Convert.ToInt32(bufferAll[2]) != 16)
+                {
+                    for (int index = 0; index <= 20; index++)
+                    {
+                        if (index <= 18)
+                        {
+                            if (Convert.ToInt32(bufferAll[index]) == 1 && Convert.ToInt32(bufferAll[index + 1]) == 3 && Convert.ToInt32(bufferAll[index + 2]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 19)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[19]) == 1 && Convert.ToInt32(bufferAll[20]) == 3 && Convert.ToInt32(bufferAll[0]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 20)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[20]) == 1 && Convert.ToInt32(bufferAll[0]) == 3 && Convert.ToInt32(bufferAll[1]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                if (Convert.ToInt32(bufferAll[0]) != 1 || Convert.ToInt32(bufferAll[1]) != 3 || Convert.ToInt32(bufferAll[2]) != 16)
+                {
+                    for (int index = 0; index <= 20; index++)
+                    {
+                        if (index <= 18)
+                        {
+                            if (Convert.ToInt32(bufferAll[index]) == 1 && Convert.ToInt32(bufferAll[index + 1]) == 3 && Convert.ToInt32(bufferAll[index + 2]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 19)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[19]) == 1 && Convert.ToInt32(bufferAll[20]) == 3 && Convert.ToInt32(bufferAll[0]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                        if (index == 20)
+                        {
+
+                            if (Convert.ToInt32(bufferAll[20]) == 1 && Convert.ToInt32(bufferAll[0]) == 3 && Convert.ToInt32(bufferAll[1]) == 16)
+                            {
+                                byte[] OllbufferAll = bufferAll;
+                                for (int RightByte = 0; RightByte <= 20; RightByte++)
+                                {
+                                    if (RightByte + index > 20)
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[RightByte + index - 21];
+                                    }
+                                    else
+                                    {
+                                        bufferAll[RightByte] = OllbufferAll[index + RightByte];
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+                StringBuilder sb1 = new StringBuilder();
+                StringBuilder sb2 = new StringBuilder();
+                for (int t = 11; t <= 14; t++)
+                {
+
+                    int intA1 = Convert.ToInt32(bufferAll[t]);
+                    if (intA1 < 10)
+                    {
+                        sb1.Append("0" + intA1.ToString("x"));
+                    }
+                    else
+                    {
+                        sb1.Append(intA1.ToString("x"));
+                    }
+                }
+                for (int t = 15; t <= 18; t++)
+                {
+
+                    int intA2 = Convert.ToInt32(bufferAll[t]);
+                    if (intA2 < 10)
+                    {
+                        sb2.Append("0" + intA2.ToString("x"));
+                    }
+                    else
+                    {
+                        sb2.Append(intA2.ToString("x"));
+                    }
+                }
+                string g1 = "" + sb1;
+                string g2 = "" + sb2;
+                if (g1 != "")
+                {
+                    p1 = int.Parse(g1, System.Globalization.NumberStyles.HexNumber);
+
+                }
+                if (g2 != "")
+                {
+                    p2 = int.Parse(g2, System.Globalization.NumberStyles.HexNumber);
+
+                }
+                double value1 = p1 / 100.0;
+                double value2 = p2 / 100.0;
+                if (GetData("cover_limit") <= value1 && value1 <= 20)
+                {
+                    if(StopOne == false)
+                    {
+                        serial.WriteLine("MOTOR_COVER_STOP1");
+                        Thread.Sleep(20);
+                        serial.WriteLine("MOTOR_COVER_OUT1");
+                    }
+
+                }
+                if (GetData("cover_limit") <= value2 && value2 <= 20)
+                {
+                    if(StopTow == false)
+                    {
+                        serial.WriteLine("MOTOR_COVER_STOP2");
+                        Thread.Sleep(20);
+                        serial.WriteLine("MOTOR_COVER_OUT2");
+                    }
+                }
+                if (value1 < 20)
+                {
+                    Cover1.Add(value1);
+                }
+                if (value2 < 20)
+                {
+                    Cover2.Add(value2+GetData("sensoroffset"));
+                }
+                if (ThreadStop == true)
+                {
+
+                    break;
+                }
+            }
+            Forceserial.Close();
+        }
+
+        static void GetDataFunction(string filename)
+        {
+            double a = 0;
+            double b = 0;
+            if (filename.Contains("1"))
+            {
+                FileStream fs1 = new FileStream(".\\Button1.txt", FileMode.Create);
+                StreamWriter sw1 = new StreamWriter(fs1);
+                foreach (double i in Button1)
+                {
+                    sw1.Write(i + "\n");
+                    a = i;
+                    if (a > b)
+                    {
+                        b = a;
+                    }
+                }
+                Console.WriteLine("Slot1_Button_MAX =" + b);
+                sw1.Flush();
+                sw1.Close();
+                fs1.Close();
+            }
+            if (filename.Contains("2"))
+            {
+                FileStream fs1 = new FileStream(".\\Button2.txt", FileMode.Create);
+                StreamWriter sw1 = new StreamWriter(fs1);
+                foreach (double i in Button2)
+                {
+                    sw1.Write(i + "\n");
+                    a = i;
+                    if (a > b)
+                    {
+                        b = a;
+                    }
+                }
+                Console.WriteLine("Slot2_Button_MAX =" + b);
+                sw1.Flush();
+                sw1.Close();
+                fs1.Close();
+            }
+            if (filename.Contains("3"))
+            {
+                FileStream fs1 = new FileStream(".\\Cover1.txt", FileMode.Create);
+                StreamWriter sw1 = new StreamWriter(fs1);
+                foreach (double i in Cover1)
+                {
+                    sw1.WriteLine(Convert.ToString(i));
+                    a = i;
+                    if (a > b)
+                    {
+                        b = a;
+                    }
+                }                       
+                Console.WriteLine("Slot1_Cover_MAX =" + b);
+                sw1.Flush();
+                sw1.Close();
+                fs1.Close();
+            }
+            if (filename.Contains("4"))
+            {
+                FileStream fs1 = new FileStream(".\\Cover2.txt", FileMode.Create);
+                StreamWriter sw1 = new StreamWriter(fs1);
+                int T = 0;
+                foreach (double i in Cover2)
+                {
+                    sw1.WriteLine(Convert.ToString(i));
+                    a = i;
+                    if (a > b)
+                    {
+                        b = a;
+                    }
+                }
+                Console.WriteLine("Slot2_Cover_MAX =" + b);
+                sw1.Flush();
+                sw1.Close();
+                fs1.Close();
+            }
+        }
+        static void WhiteLedTest(string num)
+        {
+            int[] u = new int[18];
+            Mat mat = new Mat();
+            Mat mask = new Mat();
+            Mat r = new Mat();
+            Mat g = new Mat();
+            Mat b = new Mat();
+            List<decimal> bright1 = new List<decimal>();
+            List<decimal> bright2 = new List<decimal>();
+            ReadFileData();
+            int time = GetData("Wtime");
+            FileStream fs1 = new FileStream(".\\Slot1_White.txt", FileMode.Create);
+            StreamWriter sw1 = new StreamWriter(fs1);
+            FileStream fs2 = new FileStream(".\\Slot2_White.txt", FileMode.Create);
+            StreamWriter sw2 = new StreamWriter(fs2);
+            IGrabbedRawData m_frameList;
+            List<IDeviceInfo> li = Enumerator.EnumerateDevices();
+            if (li.Count > 0)
+            {
+                IDevice m_dev;
+                m_dev = Enumerator.GetDeviceByIndex(0);
+                m_dev.Open();
+                dev_number = m_dev.DeviceKey;
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.ExposureTime])
+                {
+                    p.SetValue(time);
+                }
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.GainRaw])
+                {
+                    p.SetValue(1.0);
+                }
+                m_dev.GrabUsingGrabLoopThread();
+                m_dev.WaitForFrameTriggerReady(out m_frameList, GetData("picturetime"));
+                var bitmap = m_frameList.ToBitmap(false);
+                bitmap.Save(".\\WHITE_LED_TEST.bmp");
+                mat = CvInvoke.Imread(".\\WHITE_LED_TEST.bmp");
+                m_dev.Close();
+            }
+            CvInvoke.CvtColor(mat, mat, ColorConversion.Bgr2Rgb);
+            mask = mat;
+            CvInvoke.ExtractChannel(mat, r, 0);
+            CvInvoke.ExtractChannel(mat, g, 1);
+            CvInvoke.ExtractChannel(mat, b, 2);
+            int x = 0;
+            int y = 0;
+            int dev_num = GetData(dev_number);
+            int X1 = 0;
+            int X2 = 0;
+            int Y1 = 0;
+            int Y2 = 0;
+            Rectangle box = new Rectangle();
+            List<int> led = new List<int>();
+            if (num.Contains("0"))
+            {
+                for (int i = 1; i <= 18; i++)
+                {
+                    led.Add(i);
+                }
+            }
+            if (num.Contains("1"))
+            {
+                led.Add(1);
+                led.Add(4);
+                led.Add(7);
+                led.Add(10);
+                led.Add(13);
+                led.Add(16);
+            }
+            if (num.Contains("2"))
+            {
+                led.Add(2);
+                led.Add(5);
+                led.Add(8);
+                led.Add(11);
+                led.Add(14);
+                led.Add(17);
+            }
+            if (num.Contains("3"))
+            {
+                led.Add(3);
+                led.Add(6);
+                led.Add(9);
+                led.Add(12);
+                led.Add(15);
+                led.Add(18);
+            }
+            foreach (int i in led)
+            {
+                decimal brightness = 0;
+                double bri = 0;
+                for (int indexY = 0; indexY <= 36; indexY++)
+                {
+                    for (int indexX = 0; indexX <= 36; indexX++)
+                    {
+                        if (i < 10)
+                        {
+                            X1 = GetData("LED" + i + "x1") - GetData("rect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LED" + i + "x1") + GetData("rect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LED" + i + "y1") - GetData("rect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LED" + i + "y1") + GetData("rect_height") / 2 - 18 + indexY;
+                        }
+                        else
+                        {
+                            X1 = GetData("LED" + (i - 9) + "x2") - GetData("rect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LED" + (i - 9) + "x2") + GetData("rect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LED" + (i - 9) + "y2") - GetData("rect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LED" + (i - 9) + "y2") + GetData("rect_height") / 2 - 18 + indexY;
+                        }
+                        long total_R = 0;
+                        long total_G = 0;
+                        long total_B = 0;
+                        long sum_R = 0;
+                        long sum_G = 0;
+                        long sum_B = 0;
+                        Rectangle box1 = new Rectangle(X1, Y1, GetData("rect_width"), GetData("rect_height"));
+                        for (y = Y1; y <= Y2; y++)
+                        {
+                            for (x = X1; x <= X2; x++)
+                            {
+                                total_B += b.GetData(y, x)[0];
+                                sum_B++;
+
+
+                                total_R += r.GetData(y, x)[0];
+                                sum_R++;
+
+
+                                total_G += g.GetData(y, x)[0];
+                                sum_G++;
+                            }
+                        }
+                        decimal brightness1 = 0;
+                        double B = total_B / sum_B;
+                        double R = total_R / sum_R;
+                        double G = total_G / sum_G;
+                        bri = dev_num * ((B + R + G) / 3) / time;
+                        brightness1 = Math.Round(Convert.ToDecimal(bri), 4, MidpointRounding.AwayFromZero);                       
+                        if (brightness1 > brightness)
+                        {
+                            brightness = brightness1;
+                            box = box1;
+                        }
+                    }
+                }
+                if (i <= 9)
+                {
+                    bright1.Add(brightness);
+                    Console.WriteLine("Slot1_White_LED" + i + "_bri =" + brightness);
+                    sw1.WriteLine("Slot1_White_LED" + i + "_bri =" + brightness);
+                }
+                if (i == 9)
+                {
+                    Console.WriteLine(bright1.Average());
+                    Console.WriteLine(bright1.Max() - bright1.Min());
+                    sw1.WriteLine("Slot1_White_Ave =" + bright1.Average());
+                    sw1.WriteLine("Slot1_White_Dev =" + (bright1.Max() - bright1.Min()));
+                }
+                else
+                {
+                    bright2.Add(brightness);
+                    Console.WriteLine("Slot2_White_LED" + (i - 9) + "_bri =" + brightness * GetData("Offsetled"));
+                    sw2.WriteLine("Slot2_White_LED" + (i - 9) + "_bri =" + brightness * GetData("Offsetled"));
+                }
+                if (i == 18)
+                {
+                    Console.WriteLine(bright2.Average());
+                    Console.WriteLine(bright2.Max() - bright2.Min());
+                    sw2.WriteLine("Slot2_White_Ave =" + bright2.Average());
+                    sw2.WriteLine("Slot2_White_Dev =" + (bright2.Max() - bright2.Min()));
+                }
+                CvInvoke.Rectangle(mask, box, new Bgr(Color.Aquamarine).MCvScalar, 2);
+            }
+            fs1.Flush();
+            fs1.Flush();
+            sw1.Close();
+            sw2.Close();
+            fs1.Close();
+            fs2.Close();
+            mask.Save(".\\Rectanle.bmp");
+            Grabcut("WHITE");
+        }
+        public static void GreenLedTest()
+        {
+            int[] u = new int[18];
+            Mat mat = new Mat();
+            Mat mask = new Mat();
+            Mat r = new Mat();
+            Mat g = new Mat();
+            Mat b = new Mat();
+            ReadFileData();
+            int time = GetData("Gtime");
+            FileStream fs1 = new FileStream(".\\Slot1_Green.txt", FileMode.Create);
+            StreamWriter sw1 = new StreamWriter(fs1);
+            FileStream fs2 = new FileStream(".\\Slot2_Green.txt", FileMode.Create);
+            StreamWriter sw2 = new StreamWriter(fs2);
+            IGrabbedRawData m_frameList;
+            List<IDeviceInfo> li = Enumerator.EnumerateDevices();
+            if (li.Count > 0)
+            {
+                IDevice m_dev;
+                m_dev = Enumerator.GetDeviceByIndex(0);
+                m_dev.Open();
+                dev_number = m_dev.DeviceKey;
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.ExposureTime])
+                {
+                    p.SetValue(time);
+                }
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.GainRaw])
+                {
+                    p.SetValue(1.0);
+                }
+                m_dev.GrabUsingGrabLoopThread();
+                m_dev.WaitForFrameTriggerReady(out m_frameList, GetData("picturetime"));
+                var bitmap = m_frameList.ToBitmap(false);
+                bitmap.Save(".\\GREEN_LED_TEST.bmp");
+                mat = CvInvoke.Imread(".\\GREEN_LED_TEST.bmp");
+                m_dev.Close();
+            }
+            CvInvoke.CvtColor(mat, mat, ColorConversion.Bgr2Rgb);
+            mask = mat;
+            CvInvoke.ExtractChannel(mat, r, 0);
+            CvInvoke.ExtractChannel(mat, g, 1);
+            CvInvoke.ExtractChannel(mat, b, 2);
+            int x = 0;
+            int y = 0;
+            int dev_num = GetData(dev_number);
+            int X1 = 0;
+            int X2 = 0;
+            int Y1 = 0;
+            int Y2 = 0;
+            Rectangle box = new Rectangle();
+            for(int i = 1;i<=2; i++)
+            {
+                decimal brightness = 0;
+                double bri = 0;
+                decimal BB = 0;
+                decimal RR = 0;
+                decimal GG = 0;
+                for (int indexY = 0; indexY <= 36; indexY++)
+                {
+                    for (int indexX = 0; indexX <= 36; indexX++)
+                    {
+                        if (i == 1)
+                        {
+                            X1 = GetData("LEDx1") - GetData("colorrect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LEDx1") + GetData("colorrect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LEDy1") - GetData("colorrect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LEDy1") + GetData("colorrect_height") / 2 - 18 + indexY;
+                        }
+                        else
+                        {
+                            X1 = GetData("LEDx2") - GetData("colorrect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LEDx2") + GetData("colorrect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LEDy2") - GetData("colorrect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LEDy2") + GetData("colorrect_height") / 2 - 18 + indexY;
+                        }
+                        long total_R = 0;
+                        long total_G = 0;
+                        long total_B = 0;
+                        long sum_R = 0;
+                        long sum_G = 0;
+                        long sum_B = 0;
+                        Rectangle box1 = new Rectangle(X1, Y1, GetData("colorrect_width"), GetData("colorrect_height"));
+                        for (y = Y1; y <= Y2; y++)
+                        {
+                            for (x = X1; x <= X2; x++)
+                            {
+                                total_B += b.GetData(y, x)[0];
+                                sum_B++;
+
+
+                                total_R += r.GetData(y, x)[0];
+                                sum_R++;
+
+
+                                total_G += g.GetData(y, x)[0];
+                                sum_G++;
+
+                            }
+                        }
+                        decimal brightness1 = 0;
+                        double B = total_B / sum_B;
+                        double R = total_R / sum_R;
+                        double G = total_G / sum_G;
+                        bri = dev_num * ((B + R + G) / 3) / time;
+                        brightness1 = Math.Round(Convert.ToDecimal(bri), 4, MidpointRounding.AwayFromZero);
+
+                        if (brightness1 > brightness)
+                        {
+                            brightness = brightness1;
+                            box = box1;
+                            BB = Math.Round(Convert.ToDecimal(B), 4, MidpointRounding.AwayFromZero);
+                            RR = Math.Round(Convert.ToDecimal(R), 4, MidpointRounding.AwayFromZero);
+                            GG = Math.Round(Convert.ToDecimal(G), 4, MidpointRounding.AwayFromZero);
+                        }
+                    }
+                }
+                if (i == 1)
+                {
+                    Console.WriteLine("Slot1_Green_LED_R ="+ RR);
+                    Console.WriteLine("Slot1_Green_LED_G =" + GG);
+                    Console.WriteLine("Slot1_Green_LED_B =" + BB);
+                    Console.WriteLine("Slot1_Green_LED_bri ="+ brightness);
+                    sw1.WriteLine("Slot1_Green_LED_R =" + RR);
+                    sw1.WriteLine("Slot1_Green_LED_G =" + GG);
+                    sw1.WriteLine("Slot1_Green_LED_B =" + BB);
+                    sw1.WriteLine("Slot1_Green_LED_bri =" + brightness);
+                }
+                else
+                {
+                    Console.WriteLine("Slot2_Green_LED_R =" + RR);
+                    Console.WriteLine("Slot2_Green_LED_G =" + GG);
+                    Console.WriteLine("Slot2_Green_LED_B =" + BB);
+                    Console.WriteLine("Slot2_Green_LED_bri =" + brightness);
+                    sw2.WriteLine("Slot2_Green_LED_R =" + RR);
+                    sw2.WriteLine("Slot2_Green_LED_G =" + GG);
+                    sw2.WriteLine("Slot2_Green_LED_B =" + BB);
+                    sw2.WriteLine("Slot2_Green_LED_bri =" + brightness);
+                }
+                CvInvoke.Rectangle(mask, box, new Bgr(Color.Orange).MCvScalar, 2);
+            }
+            fs1.Flush();
+            fs1.Flush();
+            sw1.Close();
+            sw2.Close();
+            fs1.Close();
+            fs2.Close();
+            mask.Save(".\\Rectanle.bmp");
+            Grabcut("GREEN");
+        }
+
+        public static void RedLedTest()
+        {
+            int[] u = new int[18];
+            Mat mat = new Mat();
+            Mat mask = new Mat();
+            Mat r = new Mat();
+            Mat g = new Mat();
+            Mat b = new Mat();
+            ReadFileData();
+            int time = GetData("Rtime");
+            FileStream fs1 = new FileStream(".\\Slot1_Red.txt", FileMode.Create);
+            StreamWriter sw1 = new StreamWriter(fs1);
+            FileStream fs2 = new FileStream(".\\Slot2_Red.txt", FileMode.Create);
+            StreamWriter sw2 = new StreamWriter(fs2);
+            IGrabbedRawData m_frameList;
+            List<IDeviceInfo> li = Enumerator.EnumerateDevices();
+            if (li.Count > 0)
+            {
+                IDevice m_dev;
+                m_dev = Enumerator.GetDeviceByIndex(0);
+                m_dev.Open();
+                dev_number = m_dev.DeviceKey;
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.ExposureTime])
+                {
+                    p.SetValue(time);
+                }
+                using (IFloatParameter p = m_dev.ParameterCollection[ParametrizeNameSet.GainRaw])
+                {
+                    p.SetValue(1.0);
+                }
+                m_dev.GrabUsingGrabLoopThread();
+                m_dev.WaitForFrameTriggerReady(out m_frameList, GetData("picturetime"));
+                var bitmap = m_frameList.ToBitmap(false);
+                bitmap.Save(".\\RED_LED_TEST.bmp");
+                mat = CvInvoke.Imread(".\\RED_LED_TEST.bmp");
+                m_dev.Close();
+            }
+            CvInvoke.CvtColor(mat, mat, ColorConversion.Bgr2Rgb);
+            mask = mat;
+            CvInvoke.ExtractChannel(mat, r, 0);
+            CvInvoke.ExtractChannel(mat, g, 1);
+            CvInvoke.ExtractChannel(mat, b, 2);
+            int x = 0;
+            int y = 0;
+            int dev_num = GetData(dev_number);
+            int X1 = 0;
+            int X2 = 0;
+            int Y1 = 0;
+            int Y2 = 0;
+            Rectangle box = new Rectangle();
+            for (int i = 1; i <= 2; i++)
+            {
+                decimal brightness = 0;
+                double bri = 0;
+                decimal BB = 0;
+                decimal RR = 0;
+                decimal GG = 0;
+                for (int indexY = 0; indexY <= 36; indexY++)
+                {
+                    for (int indexX = 0; indexX <= 36; indexX++)
+                    {
+                        if (i == 1)
+                        {
+                            X1 = GetData("LEDx1") - GetData("colorrect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LEDx1") + GetData("colorrect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LEDy1") - GetData("colorrect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LEDy1") + GetData("colorrect_height") / 2 - 18 + indexY;
+                        }
+                        else
+                        {
+                            X1 = GetData("LEDx2") - GetData("colorrect_width") / 2 - 18 + indexX;
+                            X2 = GetData("LEDx2") + GetData("colorrect_width") / 2 - 18 + indexX;
+                            Y1 = GetData("LEDy2") - GetData("colorrect_height") / 2 - 18 + indexY;
+                            Y2 = GetData("LEDy2") + GetData("colorrect_height") / 2 - 18 + indexY;
+                        }
+                        long total_R = 0;
+                        long total_G = 0;
+                        long total_B = 0;
+                        long sum_R = 0;
+                        long sum_G = 0;
+                        long sum_B = 0;
+                        Rectangle box1 = new Rectangle(X1, Y1, GetData("colorrect_width"), GetData("colorrect_height"));
+                        for (y = Y1; y <= Y2; y++)
+                        {
+                            for (x = X1; x <= X2; x++)
+                            {
+                                total_B += b.GetData(y, x)[0];
+                                sum_B++;
+
+
+                                total_R += r.GetData(y, x)[0];
+                                sum_R++;
+
+
+                                total_G += g.GetData(y, x)[0];
+                                sum_G++;
+
+                            }
+                        }
+                        decimal brightness1 = 0;
+                        double B = total_B / sum_B;
+                        double R = total_R / sum_R;
+                        double G = total_G / sum_G;
+                        bri = dev_num * ((B + R + G) / 3) / time;
+                        brightness1 = Math.Round(Convert.ToDecimal(bri), 4, MidpointRounding.AwayFromZero);
+
+                        if (brightness1 > brightness)
+                        {
+                            brightness = brightness1;
+                            box = box1;
+                            BB = Math.Round(Convert.ToDecimal(B), 4, MidpointRounding.AwayFromZero);
+                            RR = Math.Round(Convert.ToDecimal(R), 4, MidpointRounding.AwayFromZero);
+                            GG = Math.Round(Convert.ToDecimal(G), 4, MidpointRounding.AwayFromZero);
+                        }
+                    }
+                }
+                if (i == 1)
+                {
+                    Console.WriteLine("Slot1_Red_LED_R =" + RR);
+                    Console.WriteLine("Slot1_Red_LED_G =" + GG);
+                    Console.WriteLine("Slot1_Red_LED_B =" + BB);
+                    Console.WriteLine("Slot1_Red_LED_bri =" + brightness);
+                    sw1.WriteLine("Slot1_Red_LED_R =" + RR);
+                    sw1.WriteLine("Slot1_Red_LED_G =" + GG);
+                    sw1.WriteLine("Slot1_Red_LED_B =" + BB);
+                    sw1.WriteLine("Slot1_Red_LED_bri =" + brightness);
+                }
+                else
+                {
+                    Console.WriteLine("Slot2_Red_LED_R =" + RR);
+                    Console.WriteLine("Slot2_Red_LED_G =" + GG);
+                    Console.WriteLine("Slot2_Red_LED_B =" + BB);
+                    Console.WriteLine("Slot2_Red_LED_bri =" + brightness);
+                    sw2.WriteLine("Slot2_Red_LED_R =" + RR);
+                    sw2.WriteLine("Slot2_Red_LED_G =" + GG);
+                    sw2.WriteLine("Slot2_Red_LED_B =" + BB);
+                    sw2.WriteLine("Slot2_Red_LED_bri =" + brightness);
+                }
+                CvInvoke.Rectangle(mask, box, new Bgr(Color.Orange).MCvScalar, 2);
+            }
+            fs1.Flush();
+            fs1.Flush();
+            sw1.Close();
+            sw2.Close();
+            fs1.Close();
+            fs2.Close();
+            mask.Save(".\\Rectanle.bmp");
+            Grabcut("RED");
+        }
+        public static int GetData(string data)
+        {
+            string[] value = null;
+            dic.TryGetValue(data, out value);
+            return Convert.ToInt32(value[0]);
+        }
+        static public void ReadFileData()
+        {
+            StreamReader sr1 = new StreamReader("D:\\config\\Slot坐标.txt", Encoding.Default);
+            StreamReader sr3 = new StreamReader("D:\\config\\Color坐标.txt", Encoding.Default);
+            StreamReader sr4 = new StreamReader(".\\配置文件\\DeviceKey.txt", Encoding.Default);
+            StreamReader sr5 = new StreamReader(".\\配置文件\\Parameter.txt", Encoding.Default);
+            string line;
+            List<string> list = new List<string>();
+            List<string> list1 = new List<string>();
+            while ((line = sr1.ReadLine()) != null)
+            {
+                list.Add(line.ToString());
+            }
+            while ((line = sr3.ReadLine()) != null)
+            {
+                list.Add(line.ToString());
+            }
+            while ((line = sr4.ReadLine()) != null)
+            {
+                list1.Add(line.ToString());
+            }
+            while ((line = sr5.ReadLine()) != null)
+            {
+                list.Add(line.ToString());
+            }
+            foreach (string s in list)
+            {
+                string[] arr = s.Split(':');
+                listKeys.Add(arr[0]);
+                string[] arr_value = arr[1].Split(',');
+                dic.Add(arr[0], arr_value);
+            }
+            foreach (string s in list1)
+            {
+                string[] arr = s.Split('=');
+                listKeys.Add(arr[0]);
+                string[] arr_value = arr[1].Split(',');
+                dic.Add(arr[0], arr_value);
+            }
+        }
+        public static void Grabcut(string picture)
+        {
+            if (picture.Contains("WHITE"))
+            {
+                Bitmap bitmap1 = new Bitmap(".\\WHITE_LED_TEST.bmp");
+                Rectangle rect1 = new Rectangle(0, 0, 2448, 1024);
+                Rectangle rect2 = new Rectangle(0, 1024, 2448, 1024);
+                Bitmap slot1 = bitmap1.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot2 = bitmap1.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot1.Save(".\\Solt1_White_LED.bmp");
+                slot2.Save(".\\Solt2_White_LED.bmp");
+                Bitmap bitmap2 = new Bitmap(".\\Rectanle.bmp");
+                Bitmap slot3 = bitmap2.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot4 = bitmap2.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot3.Save(".\\Solt1_White_LED_Rectanle.bmp");
+                slot4.Save(".\\Solt2_White_LED_Rectanle.bmp");
+            }
+            if (picture.Contains("GREEN"))
+            {
+                Bitmap bitmap1 = new Bitmap(".\\GREEN_LED_TEST.bmp");
+                Rectangle rect1 = new Rectangle(0, 0, 2448, 1024);
+                Rectangle rect2 = new Rectangle(0, 1024, 2448, 1024);
+                Bitmap slot1 = bitmap1.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot2 = bitmap1.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot1.Save(".\\Solt1_Green_LED.bmp");
+                slot2.Save(".\\Solt2_Green_LED.bmp");
+                Bitmap bitmap2 = new Bitmap(".\\Rectanle.bmp");
+                Bitmap slot3 = bitmap2.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot4 = bitmap2.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot3.Save(".\\Solt1_Green_LED_Rectanle.bmp");
+                slot4.Save(".\\Solt2_Green_LED_Rectanle.bmp");
+            }
+            if (picture.Contains("RED"))
+            {
+                Bitmap bitmap1 = new Bitmap(".\\RED_LED_TEST.bmp");
+                Rectangle rect1 = new Rectangle(0, 0, 2448, 1024);
+                Rectangle rect2 = new Rectangle(0, 1024, 2448, 1024);
+                Bitmap slot1 = bitmap1.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot2 = bitmap1.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot1.Save(".\\Solt1_Red_LED.bmp");
+                slot2.Save(".\\Solt2_Red_LED.bmp");
+                Bitmap bitmap2 = new Bitmap(".\\Rectanle.bmp");
+                Bitmap slot3 = bitmap2.Clone(rect1, System.Drawing.Imaging.PixelFormat.DontCare);
+                Bitmap slot4 = bitmap2.Clone(rect2, System.Drawing.Imaging.PixelFormat.DontCare);
+                slot3.Save(".\\Solt1_Red_LED_Rectanle.bmp");
+                slot4.Save(".\\Solt2_Red_LED_Rectanle.bmp");
+            }
+        }
+        public static string SoftwareInformation()
+        {
+            string Information = "V1.3" + "\n";
+            string updata1 = "2019-3-6 Optimization code" + "\n";
+            string updata2 = "2019-3-9 Change the force sensor paramater" + "\n";
+            string updata3 = "2019-3-9 Add force sensor data processing" + "\n";
+            string updata4 = "2019-3-11 Expand the calculation range of the image and refine the calculation steps" + "\n";
+            return (Information + updata1 + updata2 + updata3 + updata4);
+        }
+    }
+}

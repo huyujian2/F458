@@ -1,0 +1,4 @@
+slot1_white_dev =0.3701
+slot1_white_dev_max=108.5195
+slot1_white_dev_min=108.1494
+slot1_white_avg =108.3776
